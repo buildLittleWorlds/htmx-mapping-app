@@ -15,8 +15,8 @@
     <main>
         <section id="text-input">
             <h2>Input Passage</h2>
-            <form>
-                <textarea id="passage" rows="10" cols="50" placeholder="Enter your text here..."></textarea>
+            <form hx-post="/analyze">
+                <textarea id="passage" name="passage" rows="10" cols="50" placeholder="Enter your text here..."></textarea>
                 <button type="submit">Analyze</button>
             </form>
         </section>
